@@ -61,14 +61,22 @@ let All_song = [
     name: "Ishq FM",
   },
   {
-    path: "https://peridot.streamguys1.com:7150/Tarana.aac",
-    name: "Radio Tarana NZ",
+    path: "http://198.50.156.92:8255/stream/1/",
+    name: "Classic Bollywood",
+  },
+  {
+    path: "http://217.13.107.32:8000/stream/1/",
+    name: "Indie Pop",
+  },
+  {
+    path: "http://188.165.240.90:9510/stream/1/",
+    name: "Bollywood Mixer",
   },
 
 ];
 
 //Music Player Functionality
-// function load the track
+// function load the tracks
 function load_track(index_no) {
   clearInterval(timer);
 

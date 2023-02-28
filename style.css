@@ -174,9 +174,12 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   padding: 8px 12px;
   background: #ff8a65;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .left .volume i:hover {
-  background: #fff;
+  background: #ff0303;
 }
 
 /* right part */
@@ -232,8 +235,10 @@ input[type="range"]::-webkit-slider-thumb {
   font-family: "Dancing Script", cursive;
 }
 
-/* responsivnes */
 
+
+
+/* RESPONSIVNESS STARTS HERE */
 @media screen and (max-width: 1540px) {
   .section1Icon i {
     font-size: 4rem;
@@ -284,11 +289,6 @@ input[type="range"]::-webkit-slider-thumb {
     top: 12%;
     left: 8%;
   }
-
-  .section1 .logo .kiwi {
-    height: 180px;
-    width: 180px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -329,7 +329,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media screen and (max-width: 520px) {
-  .main{
+  .main {
     margin-top: 20px;
   }
   .right i:before {
@@ -353,7 +353,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media screen and (max-width: 375px) {
   .section1 .logo {
-    top:30%;
+    top: 30%;
   }
 
   .section1 .logo .kiwi {
@@ -390,5 +390,93 @@ input[type="range"]::-webkit-slider-thumb {
   input[type="range"]::-webkit-slider-thumb {
     height: 15px;
     width: 15px;
+  }
+}
+
+/* HORIZONTAL SCREENS  */
+@media screen and (max-height: 540px), screen and (max-height: 450px) {
+  .section1 .logo {
+    top: 25%;
+  }
+
+  .section1 .logo .kiwi {
+    height: 130px;
+    width: 130px;
+  }
+
+  .main {
+    margin-top: -80px;
+  }
+
+  .main .middle {
+    margin-top: 30px;
+  }
+
+  .right #artist {
+    /* channel name  */
+    top: 190px;
+    font-size: 15px;
+  }
+
+  .right i:before {
+    font-size: 30px;
+  }
+  .right .middle button {
+    height: 80px;
+    width: 80px;
+  }
+  .left .volume {
+    top: 90%;
+    height: 5px;
+  }
+}
+
+@media screen and (max-height: 360px) {
+  .section1 .logo {
+    top: 23%;
+  }
+  .main {
+    margin-top: -90px;
+  }
+}
+
+/* FOR SAMSUNG FOLD HORIZONTAL */
+@media screen and (max-height: 280px) {
+  .section1 .logo {
+    top: 22%;
+  }
+
+  .section1 .logo .kiwi {
+    height: 100px;
+    width: 100px;
+  }
+
+  .right {
+    bottom: 10%;
+  }
+  .main {
+    margin-top: -150px;
+  }
+
+  .right #artist {
+    /* channel name  */
+    top: 230px;
+    font-size: 10px;
+  }
+
+  .right i:before {
+    font-size: 20px;
+  }
+  .right .middle {
+    width: 110%;
+    margin-top: 150px;
+  }
+  .right .middle button {
+    height: 50px;
+    width: 50px;
+  }
+  .left .volume {
+    top: 90%;
+    height: 5px;
   }
 }
