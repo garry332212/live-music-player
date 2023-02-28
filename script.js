@@ -39,11 +39,10 @@ let All_song = [
     name: "Punjabi Hits",
     img: "./assets/punjabihits.png",
   },
-
   {
-    path: "http://stream.radiobollyfm.in:8201/hd?type=http&nocache=171734",
-    name: "Bollywood Hits",
-    img: "./assets/hindi hits.png",
+    path: "https://securestreams8.autopo.st:3001/1",
+    name: "Hungama Bollywood",
+    img: "./assets/hungama.png",
   },
 
   {
@@ -58,11 +57,7 @@ let All_song = [
     img: "./assets/bolPunjabiRadio.png",
   },
 
-  {
-    path: "https://securestreams8.autopo.st:3001/1",
-    name: "Hungama Bollywood",
-    img: "./assets/hungama.png",
-  },
+
 
   {
     path: "https://s2.radio.co/sbb640c97c/listen",
