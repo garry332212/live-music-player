@@ -55,7 +55,7 @@ html {
   border-width: 60px;
   border-color: #983b3b #98983b #3b9859 #3b5998;
   -webkit-animation-name: rotate;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration:6s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
