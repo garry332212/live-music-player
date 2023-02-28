@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiwi Gabroo's</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="icon" href="./assets/radio.png" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- section 1 -->
+    <section class="section1">
+      <div class="section1Icon">
+        <i class="fa-solid fa-headphones change">&nbspListen To</i>
+        <i class="icon2 fa-solid fa-radio">&nbspRadio Music</i>
+        <i class="icon3 fa-solid fa-clock">&nbsp24 X 7</i>
+      </div>
+      <div class="logo">
+
+        <img id="spinner" src="/assets/kiwi.png" class="kiwi " />
+
+      </div>
+      <!-- Music Player within section1 -->
+      <div class="content">
+        <div class="left">
+          <h1>the <br />indian <br />music</h1>
+        </div>
+
+
+        <div class="main">
+          <!--- left part --->
+          <div class="left">
+            <!--- song img --->
+            <div class="volume">
+              <p id="volume_show">90</p>
+              <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+              <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+            </div>
+          </div>
+          <!--- right part --->
+          <div class="right">
+            <!---  artist name --->
+            <p id="artist">Artist name</p>
+            <!--- middle part --->
+            <div class="middle">
+              <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+              <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+              <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <p class="byme">By Gurvinder Singh</p>
+    </section>
+
+    <!-- END OF SECTION 1 ICONS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

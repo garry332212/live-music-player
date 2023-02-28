@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/* Commmon Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Righteous", cursive;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Commmon Styles End*/
+
+/* Section1 */
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  box-shadow: 3rem 3rem 3rem #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000000;
+}
+
+.section1 .logo {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.section1 .logo .kiwi {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 100px;
+  box-shadow: 0.8rem 0.3rem 8rem #f10909;
+}
+
+/* spinnig the kiwigabroos logo */
+.elem {
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 60px;
+  border-color: #983b3b #98983b #3b9859 #3b5998;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.section1Icon i {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 18rem;
+  right: 15rem;
+  color: rgba(251, 250, 250, 0.8);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.13s;
+}
+
+.section1Icon i.change {
+  text-shadow: 0.3rem 0.3rem 0.3rem #121212;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s 0.2s;
+}
+
+.section1 .content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.section1 .content .left h1 {
+  font-size: 12rem;
+  color: #fff;
+  padding-left: 10rem;
+}
+
+.section1 .content .right p {
+  color: #fff;
+  padding-right: 20px;
+  font-size: 2rem;
+}
+
+.main {
+  position: relative;
+  left: 0;
+  padding: 30px;
+  right: 20rem;
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.main button {
+  padding: 10px 12px;
+  margin: 0 10px;
+}
+
+/* left & right part */
+.right {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* both range slider part */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 50%;
+  outline: none;
+  height: 2px;
+  margin: 0 15px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  background: #ff8a65;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.left .volume {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* volume part */
+.left .volume p {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.left .volume i {
+  cursor: pointer;
+  padding: 8px 12px;
+  background: #ff8a65;
+}
+.left .volume i:hover {
+  background: #fff;
+}
+
+/* right part */
+.right .middle {
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right .middle button {
+  border: none;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.right #artist {
+  position: absolute;
+  top: 230px;
+  left: 52%;
+  transform: translateX(-50%);
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 23px;
+}
+
+#play {
+  background: #ff8a65;
+}
+.right button:hover {
+  background: #ff8a65;
+}
+.right i:before {
+  color: #fff;
+  font-size: 70px;
+}
+
+/* signature */
+.section1 .byme {
+  color: #fff;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+}
+
+/* responsivnes */
+
+@media screen and (max-width: 1540px) {
+  .section1Icon i {
+    font-size: 4rem;
+    top: 24rem;
+    right: 18rem;
+  }
+
+  .right #artist {
+    /* channel name  */
+    width: 100%;
+    text-align: center;
+  }
+
+  .right .middle {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .section1Icon i {
+    font-size: 3rem;
+    top: 20rem;
+  }
+
+  .right #artist {
+    /* channel name  */
+    font-size: 20px;
+  }
+
+  .right .middle {
+    width: 200%;
+  }
+
+  .right i:before {
+    font-size: 60px;
+  }
+  .right .middle button {
+    height: 140px;
+    width: 140px;
+  }
+
+  .section1 .content .left h1 {
+    font-size: 10rem;
+    margin-top: 5rem;
+  }
+
+  .section1 .logo {
+    top: 12%;
+    left: 8%;
+  }
+
+  .section1 .logo .kiwi {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section1Icon i {
+    display: none;
+  }
+  .section1 .content .left h1 {
+    display: none;
+  }
+
+  .section1 .logo {
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .right #artist {
+    /* channel name  */
+    top: 220px;
+    font-size: 18px;
+  }
+
+  .right i:before {
+    font-size: 50px;
+  }
+  .right .middle button {
+    height: 130px;
+    width: 130px;
+  }
+  .left .volume {
+    top: 100%;
+  }
+  .section1 .byme {
+    top: 98%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main{
+    margin-top: 20px;
+  }
+  .right i:before {
+    font-size: 30px;
+  }
+  .right .middle button {
+    height: 80px;
+    width: 80px;
+  }
+
+  .right #artist {
+    top: 200px;
+    left: 55%;
+    font-size: 13px;
+  }
+
+  .left .volume {
+    top: 95%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section1 .logo {
+    top:30%;
+  }
+
+  .section1 .logo .kiwi {
+    height: 150px;
+    width: 150px;
+  }
+
+  .right i:before {
+    font-size: 20px;
+  }
+  .right .middle button {
+    height: 60px;
+    width: 60px;
+  }
+
+  .right #artist {
+    top: 170px;
+    font-size: 10px;
+    left: 56%;
+  }
+
+  .left .volume {
+    top: 230px;
+  }
+
+  /* volume part */
+  .left .volume p {
+    display: none;
+  }
+  .left .volume i {
+    background: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+  }
+}
