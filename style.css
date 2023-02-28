@@ -370,6 +370,20 @@ input[type="range"]::-webkit-slider-thumb {
     top: 95%;
   }
 }
+@media screen and (max-width: 420px) {
+
+  .section1 .logo {
+    top: 25%;
+   
+  }
+  
+  .section1 .logo .kiwi {
+    height:220px;
+    width: 220px;
+    border-radius: 130px;
+ 
+  }
+}
 
 @media screen and (max-width: 375px) {
   .section1 .logo {
